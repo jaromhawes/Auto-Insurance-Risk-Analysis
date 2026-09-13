@@ -2,7 +2,7 @@
 
 A short actuarial-style analysis of a private passenger auto insurance portfolio, examining how claim frequency and claim severity vary across key rating variables (driver age, vehicle age, and geographic area), and combining them into a pure premium view to identify the most meaningful risk signals.
 
-# Message to Non-Actuaries
+## Message to Non-Actuaries
 
 Insurance companies have to guess, ahead of time, how much each driver is likely to cost them in claims. That guess is what your premium is based on. This project looks at real data from around 68,000 policies to see which factors actually predict that cost. We can break this question up into two simpler ones: (1) how often does a group of drivers file a claim, and (2) how expensive is a typical claim for that group? If we multiply those together we get an expected cost per driver. Then, we compare that across different variables (driver age, vehicle age, and location) to see which factors matter the most.
 
@@ -67,3 +67,9 @@ Requires base R only — no external packages needed.
 - These are univariate relativities; a full ratemaking exercise would fit a multivariate GLM (e.g., Poisson for frequency, Gamma for severity) to isolate each factor's independent effect.
 - The area-level severity finding rests on a thinner slice of exposure and would benefit from a credibility-weighted estimate.
 - Data reflects a single historical period (2004–05) in one market; relativities would need refreshing against current experience before any real pricing use.
+
+## Findings to Non-Actuaries
+
+- Age matters more than anything else. The youngest drivers cost the insurers around 71% more than average, while the oldest drivers cost about 25-30% less than average.
+- One would assume older vehicles would get into more accidents, but that's not what happened. There are slightly fewer claims as cars age. But, when an older car does get into a crash, it tends to cost more to fix.
+- Surprisingly, location made a difference. Claim rates definitely varied by area, and one area had both the highest claim rate and the highest average cost. However, it also had the smallest number of policies behind it. Less data makes the area data slightly less credible, at least before an insurer could trust it confidently.
