@@ -1,6 +1,6 @@
 # Auto Insurance Claims Risk Analysis
 
-A short actuarial-style analysis of a private passenger auto insurance portfolio, examining how **claim frequency** and **claim severity** vary across key rating variables (driver age, vehicle age, and geographic area), and combining them into a **pure premium** view to identify the most meaningful risk signals.
+A short actuarial-style analysis of a private passenger auto insurance portfolio, examining how claim frequency and claim severity vary across key rating variables (driver age, vehicle age, and geographic area), and combining them into a pure premium view to identify the most meaningful risk signals.
 
 📄 **[Read the full memo](output/Auto_Insurance_Risk_Memo.pdf)**
 
