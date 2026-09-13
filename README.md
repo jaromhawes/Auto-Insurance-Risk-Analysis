@@ -2,6 +2,10 @@
 
 A short actuarial-style analysis of a private passenger auto insurance portfolio, examining how claim frequency and claim severity vary across key rating variables (driver age, vehicle age, and geographic area), and combining them into a pure premium view to identify the most meaningful risk signals.
 
+# Message to Non-Actuaries
+
+Insurance companies have to guess, ahead of time, how much each driver is likely to cost them in claims. That guess is what your premium is based on. This project looks at real data from around 68,000 policies to see which factors actually predict that cost. We can break this question up into two simpler ones: (1) how often does a group of drivers file a claim, and (2) how expensive is a typical claim for that group? If we multiply those together we get an expected cost per driver. Then, we compare that across different variables (driver age, vehicle age, and location) to see which factors matter the most.
+
 📄 **[Read the full memo](output/Auto_Insurance_Risk_Memo.pdf)**
 
 ## Summary
