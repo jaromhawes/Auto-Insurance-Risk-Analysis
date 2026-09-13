@@ -8,9 +8,9 @@ A short actuarial-style analysis of a private passenger auto insurance portfolio
 
 Using a portfolio of 67,856 one-year auto policies, this project decomposes loss cost into frequency and severity — the standard actuarial ratemaking approach — and finds:
 
-- **Driver age is the dominant risk signal.** The youngest driver category has a pure premium **71% above** the portfolio average; the oldest categories run **25–30% below** average.
-- **Vehicle age behaves counter-intuitively.** Claim frequency actually *decreases* slightly as vehicles age, while average severity trends upward — a reminder that rating factors should be built from data, not assumption.
-- **Geography is a real but thinner signal**, and the highest-frequency zone also has the smallest exposure base, flagging it as a candidate for credibility weighting rather than full-weight use.
+- Driver age is the dominant risk signal. The youngest driver category has a pure premium **71% above** the portfolio average; the oldest categories run **25–30% below** average.
+- Vehicle age behaves counter-intuitively. Claim frequency actually decreases slightly as vehicles age, while average severity trends upward — a reminder that rating factors should be built from data, not assumption.
+- Geography is a real but thinner signal, and the highest-frequency zone also has the smallest exposure base, flagging it as a candidate for credibility weighting rather than full-weight use.
 
 ## Data
 
@@ -29,9 +29,9 @@ This project uses the **`dataCar`** dataset — 67,856 one-year auto insurance p
 
 ## Methodology
 
-1. **Frequency** = claims ÷ exposure (claims per policy-year)
-2. **Severity** = average cost per claim, conditional on a claim occurring
-3. **Pure premium** = frequency × severity = expected loss per exposure-year
+1. Frequency = claims ÷ exposure (claims per policy-year)
+2. Severity = average cost per claim, conditional on a claim occurring
+3. Pure premium = frequency × severity = expected loss per exposure-year
 4. Relativities were computed by rating variable, indexed to the portfolio average (1.0), following the standard framing used in ratemaking work.
 
 ## Repo structure
